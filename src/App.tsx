@@ -63,11 +63,12 @@ function App() {
   };
 
   const handleEditTodo = (id: string) => {
-    const todoEdit = todos.filter((todo) => todo.id === id);
-
-    setEditedContent(todoEdit.content);
-    setCurrentTodoId(id);
-    setIsModalOpen(true);
+    const todoEdit = todos.find((todo) => todo.id === id);
+    if (todoEdit) {
+      setEditedContent(todoEdit.content);
+      setCurrentTodoId(id);
+      setIsModalOpen(true);
+    }
   };
 
   const handleSaveEdit = () => {
