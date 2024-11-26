@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  font-size: 18px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.todo-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.todo-input input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+.todo-input button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #3589d7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-groups {
+  display: flex;
+  gap: 10px;
+}
+
+.button-groups button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+
+.button-groups button:first-child {
+  background-color: #3589d7;
+}
+.button-groups button:last-child {
+  background-color: #e83333;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.todo-item:hover {
+  background-color: #e0e0e0;
+}
+
+.todo-item:active {
+  background-color: #d0d0d0;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 30px;
+  height: 300px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-content input {
+  width: 80%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.modal-content button {
+  font-size: 18px;
+  margin: 5px;
+  padding: 12px;
+}
